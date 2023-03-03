@@ -10,7 +10,7 @@
 
 <div id="app">
 	<!-- Replace hw3-starter below with your repo name (hw3-yourusername) so you can save!  -->
-	<ma-data v-model="expenses" src="https://github.com/designftw/hw3-nmorale5/expenses/data.json"></ma-data>
+	<ma-data v-model="expenses" src="https://github.com/designftw/hw3-nmorale5/expenses/data.json" autosave></ma-data>
 
 	<!-- Basic authentication UI (needed for saving) -->
 	<header>
@@ -93,7 +93,6 @@
 				</tr>
 			</tbody>
 		</table>
-		<button @click="expenses.save()">Save</button>
 	</main>
 </div>
 

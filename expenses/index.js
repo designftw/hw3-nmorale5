@@ -36,7 +36,6 @@ globalThis.app = createApp({
 				GBP: 0.85
 			};
 
-			console.log(amount)
 			return amount * rates[to] / rates[from];
 		},
 
@@ -60,7 +59,8 @@ globalThis.app = createApp({
 		},
 
 		totalCost(e) {
-			return this.currencyConvert("USD", e.currency, e.neoPaid ?? 0 + e.trinityPaid ?? 0 + e.jointPaid ?? 0);
+			console.log(e);
+			return this.currencyConvert("USD", e.currency, (e.neoPaid ?? 0) + (e.trinityPaid ?? 0) + (e.jointPaid ?? 0));
 		}
 	},
 
