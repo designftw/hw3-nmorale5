@@ -82,14 +82,14 @@
 				<tr>
 					<th>Expense</th>
 					<th>For</th>
-					<th>Cost</th>
+					<th>Cost ($)</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr v-for="(expense, i) in expenses.slice().reverse()">
 					<td>{{expense.description}}</td>
 					<td>{{expense.for}}</td>
-					<td>{{totalCost(i)}}</td>
+					<td>{{totalCost(expense)}}</td>
 				</tr>
 			</tbody>
 		</table>

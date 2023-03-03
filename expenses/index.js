@@ -36,12 +36,13 @@ globalThis.app = createApp({
 				GBP: 0.85
 			};
 
+			console.log(amount)
 			return amount * rates[to] / rates[from];
 		},
 
 		trySubmitForm() {
 			const d = this.formData;
-			if (d.description && d.for && (d.neoPaid || d.trinityPaid || d.jointPaid)) {
+			if (d.description && d.for && d.currency && (d.neoPaid || d.trinityPaid || d.jointPaid)) {
 				this.expenses.push({...this.formData});
 				this.formData = {
 					description: null,
@@ -58,9 +59,8 @@ globalThis.app = createApp({
 			this.focused = false;
 		},
 
-		totalCost(i) {
-			const e = this.expenses[i];
-			return e.neoPaid + e.trinityPaid + e.jointPaid;
+		totalCost(e) {
+			return this.currencyConvert("USD", e.currency, e.neoPaid ?? 0 + e.trinityPaid ?? 0 + e.jointPaid ?? 0);
 		}
 	},
 
@@ -82,17 +82,16 @@ globalThis.app = createApp({
 
 			for (let expense of this.expenses) {
 				let trinity_paid = 
-					(expense.for === JOINT ? expense.trinityPaid : 0) +
-					(expense.for === NEO ? expense.jointPaid : 0);
+					(expense.for === JOINT ? expense.trinityPaid ?? 0 : 0) +
+					(expense.for === NEO ? expense.jointPaid ?? 0 : 0);
 				let neo_paid = 
-					(expense.for === JOINT ? expense.neoPaid : 0) +
-					(expense.for === TRINITY ? expense.jointPaid : 0);
-				let trinity_paid_for_neo = expense.for === NEO ? expense.trinityPaid : 0;
-				let neo_paid_for_trinity = expense.for === TRINITY ? expense.neoPaid : 0;
+					(expense.for === JOINT ? expense.neoPaid ?? 0 : 0) +
+					(expense.for === TRINITY ? expense.jointPaid ?? 0 : 0);
+				let trinity_paid_for_neo = expense.for === NEO ? expense.trinityPaid ?? 0 : 0;
+				let neo_paid_for_trinity = expense.for === TRINITY ? expense.neoPaid ?? 0 : 0;
 
-				total += (trinity_paid - neo_paid)/2 + trinity_paid_for_neo - neo_paid_for_trinity;
+				total += this.currencyConvert("USD", expense.currency, (trinity_paid - neo_paid)/2 + trinity_paid_for_neo - neo_paid_for_trinity);
 			}
-
 			return total;
 		}
 	}

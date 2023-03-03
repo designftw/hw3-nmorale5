@@ -2,277 +2,330 @@
 	{
 		"description": "Rent, Sept 2020",
 		"trinityPaid": 3553,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Locksmith ",
 		"neoPaid": 200,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Joint credit card Sep 2020",
 		"trinityPaid": 2283,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Cleaner",
 		"trinityPaid": 200,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Trinity Laptop repair ",
 		"neoPaid": 922,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Rent Oct 2020",
 		"trinityPaid": 3553,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Joint credit card Oct 2020",
 		"trinityPaid": 4984,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Trinity implant payment 2",
 		"neoPaid": 830,
-		"for": "trinity"
+		"for": "trinity",
+		"currency": "USD"
 	},
 	{
 		"description": "Rent Nov 2020",
 		"trinityPaid": 3553,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Trinity phone case",
 		"neoPaid": 53,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Trinity new boots ",
 		"neoPaid": 200,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Neo new boots ",
 		"trinityPaid": 56,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Electricity bill Oct-Nov 2020",
 		"neoPaid": 192.08,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Joint credit card Nov 2020",
 		"trinityPaid": 477.66,
 		"neoPaid": 2000,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Cleaner Nov 2020",
 		"trinityPaid": 100,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Joint credit card Dec 2020",
 		"trinityPaid": 992,
 		"neoPaid": 2000,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Rent Jan 2021",
 		"trinityPaid": 3553,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Joint credit card Jan 2021",
 		"trinityPaid": 350.51,
 		"neoPaid": 2600,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Joint credit card Feb 2021",
 		"neoPaid": 1685.47,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Old joint card Feb 2021",
 		"trinityPaid": 46.85,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Rent Mar 2021",
 		"trinityPaid": 3553,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Cleaner 19/2",
 		"trinityPaid": 120,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Cleaner 26/2",
 		"trinityPaid": 100,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Joint credit card Mar 2021",
 		"trinityPaid": 2250.49,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Cleaner 12/3",
 		"trinityPaid": 110,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Cleaner 19/3",
 		"trinityPaid": 100,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Cleaner 26/3",
 		"trinityPaid": 100,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Rent April 2021",
 		"trinityPaid": 3553,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Cleaner 2/4",
 		"trinityPaid": 110,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Electricity bill",
 		"neoPaid": 469,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Joint credit card Apr 2021",
 		"trinityPaid": 2736.91,
 		"neoPaid": 2200,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Cleaner 17/4",
 		"trinityPaid": 155,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Movers",
 		"trinityPaid": 1500,
 		"neoPaid": 510,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Joint credit card May 2021",
 		"trinityPaid": 3105,
 		"neoPaid": 3800,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "🍕",
 		"neoPaid": 39,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Laser",
 		"neoPaid": 60,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Joint credit card June 2021",
 		"trinityPaid": 1533,
 		"neoPaid": 2000,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Gas",
 		"neoPaid": 67,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Anniversary dinner",
 		"neoPaid": 302,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Gas",
 		"neoPaid": 57,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "🍣 dinner",
 		"neoPaid": 135,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Joint credit card 7/10",
 		"trinityPaid": 6410,
 		"neoPaid": 2000,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Joint credit card 8/11",
 		"trinityPaid": 2446,
 		"neoPaid": 4000,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Joint credit card 9/12/21",
 		"trinityPaid": 2566,
 		"neoPaid": 2000,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Neo prescriptions",
 		"trinityPaid": 50,
-		"for": "neo"
+		"for": "neo",
+		"currency": "USD"
 	},
 	{
 		"description": "Trinity leggings",
 		"neoPaid": 94,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Joint credit card 3/1",
 		"trinityPaid": 2500,
 		"neoPaid": 1500,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Withdrawal 7/1",
 		"neoPaid": 683,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Joint card ",
 		"neoPaid": 1016,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Withdrawal",
 		"neoPaid": 56,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Neo new sunglasses deposit",
 		"trinityPaid": 238,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Laser",
 		"neoPaid": 57,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	},
 	{
 		"description": "Neo blue pills (3 bottles)",
 		"trinityPaid": 305,
-		"for": "joint"
+		"for": "joint",
+		"currency": "USD"
 	}
 ]
