@@ -1,8 +1,21 @@
 import { createApp } from "https://mavue.mavo.io/mavue.js";
 
+const TRINITY = "trinity";
+const NEO = "neo";
+const JOINT = "joint";
+
 globalThis.app = createApp({
 	data: {
-		expenses: []
+		expenses: [],
+		formData: {
+			description: null,
+			for: null,
+			neoPaid: null,
+			trinityPaid: null,
+			jointPaid: null,
+			currency: "USD",
+		},
+		focused: true,
 	},
 
 	methods: {
@@ -24,7 +37,43 @@ globalThis.app = createApp({
 			};
 
 			return amount * rates[to] / rates[from];
+		},
+
+		trySubmitForm() {
+			const d = this.formData;
+			if (d.description && d.for && (d.neoPaid || d.trinityPaid || d.jointPaid)) {
+				this.expenses.push({...this.formData});
+				this.formData = {
+					description: null,
+					for: null,
+					neoPaid: null,
+					trinityPaid: null,
+					jointPaid: null,
+				};
+				this.focused = true;
+			}
+		},
+
+		unfocus() {
+			this.focused = false;
+		},
+
+		totalCost(i) {
+			const e = this.expenses[i];
+			return e.neoPaid + e.trinityPaid + e.jointPaid;
 		}
+	},
+
+	// I figured out how to make keyboard shortcuts from
+	// https://shubhamjain.co/2019/06/09/vue-shortcuts/
+	// https://stackoverflow.com/questions/40283406/how-to-capture-any-keypress-event-in-vuejs-without-using-input-element
+	mounted() {
+		let self = this;
+		window.addEventListener('keyup', function(ev) {
+			if (ev.key === "a") {
+				// self.showForm();
+			}
+		});
 	},
 
 	computed: {
@@ -32,10 +81,14 @@ globalThis.app = createApp({
 			let total = 0;
 
 			for (let expense of this.expenses) {
-				let trinity_paid = expense.trinity_paid ?? 0;
-				let neo_paid = expense.neo_paid ?? 0;
-				let trinity_paid_for_neo = expense.trinity_paid_for_neo ?? 0;
-				let neo_paid_for_trinity = expense.neo_paid_for_trinity ?? 0;
+				let trinity_paid = 
+					(expense.for === JOINT ? expense.trinityPaid : 0) +
+					(expense.for === NEO ? expense.jointPaid : 0);
+				let neo_paid = 
+					(expense.for === JOINT ? expense.neoPaid : 0) +
+					(expense.for === TRINITY ? expense.jointPaid : 0);
+				let trinity_paid_for_neo = expense.for === NEO ? expense.trinityPaid : 0;
+				let neo_paid_for_trinity = expense.for === TRINITY ? expense.neoPaid : 0;
 
 				total += (trinity_paid - neo_paid)/2 + trinity_paid_for_neo - neo_paid_for_trinity;
 			}

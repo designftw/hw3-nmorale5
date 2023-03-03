@@ -10,12 +10,91 @@
 
 <div id="app">
 	<!-- Replace hw3-starter below with your repo name (hw3-yourusername) so you can save!  -->
-	<ma-data v-model="expenses" src="https://github.com/designftw/hw3-starter/expenses/data.json"></ma-data>
+	<ma-data v-model="expenses" src="https://github.com/designftw/hw3-nmorale5/expenses/data.json"></ma-data>
+
+	<!-- Basic authentication UI (needed for saving) -->
+	<header>
+		<span v-if="expenses.user">
+			Logged in as {{ expenses.user.username }}
+			<button @click="expenses.logout()">Log out</button>
+		</span>
+		<button v-else @click="expenses.login()">Log in</button>
+	</header>
 
 	<!-- App UI here -->
-
-	<!-- Delete this line when you write your actual UI -->
-	{{ expenses.length }} expenses loaded.
+	<main>
+		<section @keyup.enter="trySubmitForm()">
+			<h2>Add New Expense:</h2>
+			<fieldset>
+				<legend>Description:</legend>
+				<input type="text" v-model="formData.description" v-focus="focused">
+			</fieldset>
+			<fieldset @focus="unfocus()">
+				<legend>Payment For:</legend>
+				<label>
+					<input type="radio" name="for" value="joint" v-model="formData.for">
+					Joint
+				</label>
+				<label>
+					<input type="radio" name="for" value="neo" v-model="formData.for">
+					Neo
+				</label>
+				<label>
+					<input type="radio" name="for" value="trinity" v-model="formData.for">
+					Trinity
+				</label>
+			</fieldset>
+			<fieldset>
+				<legend>Paid By:</legend>
+				<label>
+					Joint
+					<input type="number" v-model="formData.jointPaid">
+				</label><br>
+				<label>
+					Neo
+					<input type="number" v-model="formData.neoPaid">
+				</label><br>
+				<label>
+					Trinity
+					<input type="number" v-model="formData.trinityPaid">
+				</label>
+			</fieldset>
+			<fieldset>
+				<legend>Currency:</legend>
+				<label>
+					<input type="radio" name="currency" value="USD" checked v-model="formData.currency">
+					USD
+				</label>
+				<label>
+					<input type="radio" name="currency" value="EUR" v-model="formData.currency">
+					EUR
+				</label>
+				<label>
+					<input type="radio" name="currency" value="GBP" v-model="formData.currency">
+					GBP
+				</label>
+			</fieldset>
+			<button @click="trySubmitForm()">Enter</button>
+		</section>
+		<h1>{{total_balance > 0 ? "Neo owes " + total_balance : "Trinity owes " + total_balance}}</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>Expense</th>
+					<th>For</th>
+					<th>Cost</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr v-for="(expense, i) in expenses.slice().reverse()">
+					<td>{{expense.description}}</td>
+					<td>{{expense.for}}</td>
+					<td>{{totalCost(i)}}</td>
+				</tr>
+			</tbody>
+		</table>
+		<button @click="expenses.save()">Save</button>
+	</main>
 </div>
 
 <script src="index.js" type="module"></script>
