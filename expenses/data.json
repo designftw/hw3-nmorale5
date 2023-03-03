@@ -343,5 +343,13 @@
 		"trinityPaid": null,
 		"jointPaid": 75,
 		"currency": "EUR"
+	},
+	{
+		"description": "te3",
+		"for": "joint",
+		"neoPaid": 40,
+		"trinityPaid": null,
+		"jointPaid": null,
+		"currency": "GBP"
 	}
 ]
