@@ -327,5 +327,45 @@
 		"trinityPaid": 305,
 		"for": "joint",
 		"currency": "USD"
+	},
+	{
+		"description": "test",
+		"for": "joint",
+		"neoPaid": 300,
+		"trinityPaid": null,
+		"jointPaid": null,
+		"currency": "USD"
+	},
+	{
+		"description": "test2",
+		"for": "neo",
+		"neoPaid": null,
+		"trinityPaid": null,
+		"jointPaid": 75,
+		"currency": "EUR"
+	},
+	{
+		"description": "te3",
+		"for": "joint",
+		"neoPaid": 40,
+		"trinityPaid": null,
+		"jointPaid": null,
+		"currency": "GBP"
+	},
+	{
+		"description": "hi",
+		"for": "joint",
+		"neoPaid": null,
+		"trinityPaid": null,
+		"jointPaid": 100,
+		"currency": "USD"
+	},
+	{
+		"description": "e",
+		"for": "trinity",
+		"neoPaid": null,
+		"trinityPaid": null,
+		"jointPaid": 22,
+		"currency": "EUR"
 	}
 ]
