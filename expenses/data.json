@@ -327,5 +327,13 @@
 		"trinityPaid": 305,
 		"for": "joint",
 		"currency": "USD"
+	},
+	{
+		"description": "test",
+		"for": "joint",
+		"neoPaid": 300,
+		"trinityPaid": null,
+		"jointPaid": null,
+		"currency": "USD"
 	}
 ]
