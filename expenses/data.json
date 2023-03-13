@@ -375,5 +375,13 @@
 		"trinityPaid": 10,
 		"jointPaid": null,
 		"currency": "USD"
+	},
+	{
+		"description": "h",
+		"for": "joint",
+		"neoPaid": 2,
+		"trinityPaid": 3,
+		"jointPaid": 1,
+		"currency": "USD"
 	}
 ]
